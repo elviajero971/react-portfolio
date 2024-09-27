@@ -1,0 +1,31 @@
+@import '../../scss/theme';
+@import '../../scss/layout';
+
+
+.app {
+  text-align: center;
+  background-color: var(--background-color);
+
+  section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10rem;
+  }
+}
+
+@media screen and (max-width: $breakpoint-tablet) {
+  .app {
+    section {
+      margin: 0 8rem;
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+  .app {
+    section {
+      margin: 0 1rem;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+@import '../../scss/theme';
+@import '../../scss/layout';
+
+section.landing_page{
+  height: 83vh;
+
+  display: flex;
+  justify-content: space-around;
+
+  .container_pic{
+    img {
+      width: 36rem;
+      height: auto;
+      border-radius: 50%;
+    }
+  }
+
+  .container_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    .container_btn{
+      display: flex;
+      gap: 2rem;
+    }
+
+  }
+}
+
+@media screen and (max-width: $breakpoint-desktop-large) {
+  section.landing_page {
+    .container_pic {
+      img {
+        width: 24rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-desktop-medium) {
+  section.landing_page {
+    flex-direction: column;
+    height: 100%;
+    .container_pic {
+      img {
+        width: 24rem;
+        margin-top: 2rem;
+      }
+    }
+
+    .container_text {
+      .container_btn {
+        gap: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@import '../../../scss/theme';
+@import '../../../scss/layout';
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color); // Replace with a suitable background color from theme
+
+    input, textarea {
+        display: flex;
+        padding: 0.75rem;
+        border: 1px solid var(--primary-text-color); // Use a suitable color from your theme
+        border-radius: 5px;
+        font-size: 1rem;
+        background-color: var(--background-color); // Replace with color from theme
+        color: var(--primary-text-color);
+
+        &::placeholder {
+            color: var(--primary-text-color); // Style placeholder text from theme
+        }
+    }
+
+    textarea {
+        min-height: 150px;
+        resize: vertical;
+    }
+
+    .form-inputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 2rem; /* Adds a fixed gap of 2rem between the elements */
+        width: 100%;
+
+        @media (min-width: 1000px) {
+            flex-direction: row;
+            input {
+                flex: 1;
+            }
+        }
+    }
+
+    input[type="submit"] {
+        width: fit-content;
+        transition: background-color 0.3s ease;
+    }
+
+    p {
+        color: var(--primary-text-color); // Error or success message color from theme
+        font-size: 0.9rem;
+    }
+}
+
+// Responsive styles for larger screens
+@media (min-width: $breakpoint-desktop-medium) {
+    form {
+        max-width: 800px;
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+
+        .form-inputs {
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+    }
+}

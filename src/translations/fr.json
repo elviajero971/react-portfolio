@@ -1,0 +1,215 @@
+{
+  "navbar": {
+    "about": "À propos",
+    "skills": "Compétences",
+    "experiences": "Expériences",
+    "projects": "Projets",
+    "educations": "Diplômes",
+    "contact": "Contact"
+  },
+  "profile": {
+      "text_1": "Bonjour, je suis",
+      "text_2": "Lucas Illiano",
+      "text_3": "Backend Developer",
+      "cv_path": "/cv.pdf",
+      "text_btn_cv": "Télécharger CV",
+      "text_btn_contact": "Contactez-moi"
+  },
+  "about": {
+      "text_1": "En savoir plus",
+      "text_2": "À propos de moi",
+      "text_3": "Je suis un développeur backend passionné par la technologie et les défis. J'ai une expérience de plus de 2 ans dans le développement de logiciels et de sites Web. J'ai travaillé avec des technologies telles que Node.js, Express.js, MongoDB, MySQL, React.js, HTML, CSS, JavaScript, Git, etc.",
+      "experience": {
+        "title": "Expérience",
+        "text_1": "3+ years",
+        "text_2": "Développeur backend"
+      },
+      "education": {
+        "title": "Éducation",
+        "text_1": "Bac +2 en développement web",
+        "text_2": "Master en Sociologie"
+      }
+  },
+  "skills": {
+    "text_1": "Parcourez mes",
+    "text_2": "Compétences",
+    "backend": {
+      "title": "Backend",
+      "skills": {
+        "ruby_on_rails": { "name": "Ruby On Rails", "level": "Expérimenté" },
+        "ruby": { "name": "Ruby", "level": "Expérimenté" },
+        "javascript": { "name": "JavaScript", "level": "Expérimenté" }
+      }
+    },
+    "frontend": {
+      "title": "Frontend",
+      "skills": {
+        "react": { "name": "React.js", "level": "Expérimenté" },
+        "turbo": { "name": "Turbo", "level": "Expérimenté" },
+        "stimulus": { "name": "Stimulus", "level": "Expérimenté" },
+        "tailwind": { "name": "Tailwind CSS", "level": "Expérimenté" }
+      }
+    },
+    "database": {
+      "title": "Base de données",
+      "skills": {
+          "postgresql": { "name": "PostgreSQL", "level": "Expérimenté" },
+          "mysql": { "name": "MySQL", "level": "Expérimenté" },
+          "redis": { "name": "Redis", "level": "Basique" }
+      }
+    },
+    "testing": {
+      "title": "Tests",
+      "skills": {
+          "rspec": { "name": "RSpec", "level": "Expérimenté" },
+          "tdd": { "name": "TDD", "level": "Expérimenté" },
+          "selenium": { "name": "Selenium", "level": "Basique" }
+      }
+    },
+    "devops": {
+      "title": "DevOps",
+      "skills": {
+          "aws": { "name": "AWS", "level": "Basique" },
+          "docker": { "name": "Docker", "level": "Basique" },
+          "jenkins": { "name": "Jenkins", "level": "Basique" },
+          "github": { "name": "GitHub", "level": "Expérimenté" },
+          "raspberry": { "name": "Raspberry Pi", "level": "Basique" }
+      }
+    }
+  },
+  "experiences": {
+    "text_1": "Découvrez mon",
+    "text_2": "Expérience",
+    "experiences_list": {
+      "experience_1": {
+        "title": "Développeur Full Stack Ruby On Rails",
+        "date": "2021 - 2024",
+        "company": "Holivia",
+        "location": "Montpellier, France",
+        "description": {
+          "text_1": "Création de fonctionnalités : Développement de nouvelles fonctionnalités pour des applications web en utilisant Ruby on Rails, Turbo, React, Rspec, PostgreSQL et ElasticSearch.",
+          "text_2": "Correction de bugs : Résolution efficace de bugs complexes pour améliorer la stabilité et la performance des applications.",
+          "text_3": "Déploiement et CI/CD : Mise en place de pipelines d'intégration et de déploiement continus avec GitHub Actions, déploiement sur AWS (EC2, Amazon RDS, Elasticache, CodePipeline).",
+          "text_4": "Collaboration : Travail en étroite collaboration avec les équipes de développement pour adopter les meilleures pratiques DevOps.",
+          "text_5": "Autonomie : Gestion indépendante des tâches, du développement à la mise en production."
+        }
+      },
+      "experience_2": {
+        "title": "Développement et Déploiement de Sites Web",
+        "date": "2021 - présent",
+        "company": "Projets personnel",
+        "location": "En ligne",
+        "description": {
+          "text_1": "Serveur Personnel : Installation et configuration d'un serveur sur Raspberry Pi avec Apache2 et Webmin.",
+          "text_2": "Développement Web : Création de sites web dynamiques en Ruby on Rails et Node.js.",
+          "text_3": "Automatisation : Mise en œuvre de l'intégration et du déploiement continus via GitHub Actions et Jenkins.",
+          "text_4": "Gestion de Serveur : Maintenance et administration du serveur à distance via SSH.",
+          "text_5": "Expérimentation : Exploration de nouvelles technologies et pratiques pour enrichir mes compétences techniques."
+        }
+      },
+      "experience_3": {
+        "title":"Création de Sites Web Dynamiques",
+        "date": "2020 - 3 mois",
+        "company": "The Hacking Project",
+        "location": "En ligne",
+        "description": {
+          "text_1": "Travail Collaboratif : Participation à des projets en équipe de 5 personnes.",
+          "text_2": "Cat Store : Développement d'une boutique e-commerce en une semaine.",
+          "text_3": "WhiteBoard: Création d'une plateforme web en deux semaines.",
+          "text_4": "Technologies utilisées : Ruby, Ruby on Rails, HTML, CSS, Bootstrap, JavaScript, jQuery.",
+          "text_5": "Gestion de Projet : Utilisation de Trello pour l'organisation et le suivi des tâches.",
+          "text_6": "Compétences Développées : Application des méthodologies agiles, renforcement des compétences en développement full-stack."
+        }
+      }
+    }
+  },
+  "projects": {
+    "text_1": "Découvrez mes",
+    "text_2": "Projets",
+    "view_code": "Voir le code",
+    "view_live": "Voir en live",
+    "projects_list": {
+      "project_1": {
+        "title": "Portfolio",
+        "date": "2024",
+        "image_path": "/project-catstore.png",
+        "github_url": "https://github.com/elviajero971/cat_store",
+        "live_url": null
+      },
+      "project_2": {
+        "title": "Cat Store",
+        "date": "2020",
+        "image_path": "/project-catstore.png",
+        "github_url": "https://github.com/elviajero971/cat_store",
+        "live_url": null
+      },
+      "project_3": {
+        "title": "Whiteboard",
+        "date": "2020",
+        "image_path": "/project-whiteboard.png",
+        "github_url": "https://github.com/elviajero971/THP_Final_Project_Schoolink",
+        "live_url": null
+      },
+      "project_4": {
+        "title": "Amiibos",
+        "date": "2021",
+        "image_path": "/project-amiibos.png",
+        "github_url": "https://github.com/elviajero971/react-amiibo-app",
+        "live_url": "https://amiibos.nomadev.online/"
+      }
+    }
+  },
+  "educations": {
+    "text_1": "Découvrez mon",
+    "text_2": "Éducation",
+    "educations_list": {
+      "education_1": {
+        "title": "Bac+2 Développeur Web et Web Mobile",
+        "date": "Septembre 2020 - Mai 2021",
+        "school": "ADRAR",
+        "location": "Montpellier, France",
+        "description": {
+          "text_1": "Languages et Technologies étudiées : PHP, Symfony, Node.js, HTML, CSS, Javascript, React, MySQL, MongoDB",
+          "text_2": "Maîtrise des fondamentaux du développement web.",
+          "text_3": "Capacité à développer des applications web complètes et performantes.",
+          "text_4": "Compréhension des architectures web et des bonnes pratiques de codage."
+        }
+      },
+      "education_2": {
+        "title": "Bootcamp en Développement Web",
+        "date": "Avril 2020 - Juin 2020",
+        "school": "The Hacking Project",
+        "location": "En ligne",
+        "description": {
+          "text_1": "Bootcamp intensif axé sur l'apprentissage de la programmation web par le peer-learning.",
+          "text_2": "Langages et Technologies Étudiés : Ruby, Ruby on Rails, HTML, CSS, JavaScript, jQuery, PostgreSQL",
+          "text_3": "Méthodologies : POO, TDD",
+          "text_4": "Réalisations : Participation à plusieurs projets collaboratifs, mise en pratique des compétences acquises sur des projets concrets."
+        }
+      },
+      "education_3": {
+        "title": "Cours en ligne",
+        "date": "2020 - présent",
+        "school": "OpenClassrooms",
+        "location": "En ligne",
+        "description": {
+          "text_1": "HTML/CSS : Bases du développement web et du design responsive.",
+          "text_2": "Ruby : Maîtrise du langage Ruby pour le développement back-end.",
+          "text_3": "Ruby on Rails : Capacité à créer des applications web avec le framework Rails.",
+          "text_4": "JavaScript : Compétences en scripts client pour des interfaces utilisateur interactives.",
+          "text_5": "DevOps : Connaissances des pratiques d'intégration et de déploiement continu."
+        }
+      }
+    }
+  },
+  "contact": {
+    "text_1": "Prendre contact",
+    "text_2": "Contactez-moi",
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "send": "Envoyer"
+    }
+  }
+}

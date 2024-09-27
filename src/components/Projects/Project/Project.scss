@@ -1,0 +1,33 @@
+@import '../../../scss/theme';
+@import '../../../scss/layout';
+
+.project_card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  gap: 2rem;
+  border: 2px solid var(--primary-colored-text);
+  border-radius: 2rem;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+  -webkit-transition: transform 0.3s ease;
+
+  &:hover{
+    transform: scale(1.05) rotate(2deg) translateX(1rem);
+  }
+
+  img.project-pic{
+    height: 18rem;
+    width: auto;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+  .buttons_container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+}

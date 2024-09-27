@@ -1,0 +1,213 @@
+{
+  "navbar": {
+      "about": "About",
+      "skills": "Skills",
+      "experiences": "Experiences",
+      "projects": "Projects",
+      "educations": "Diplomas",
+      "contact": "Contact"
+  },
+  "profile": {
+      "text_1": "Hello, I'm",
+      "text_2": "Lucas Illiano",
+      "text_3": "Backend Developer",
+      "cv_path": "/cv.pdf",
+      "text_btn_cv": "Download CV",
+      "text_btn_contact": "Contact me"
+  },
+  "about": {
+      "text_1": "Get to know more",
+      "text_2": "About me",
+      "text_3": "I am a backend developer passionate about technology and challenges. I have over 2 years of experience in software and website development. I have worked with technologies such as Node.js, Express.js, MongoDB, MySQL, React.js, HTML, CSS, JavaScript, Git, etc.",
+      "experience": {
+        "title": "Experience",
+        "text_1": "3+ years",
+        "text_2": "Backend Developer"
+      },
+      "education": {
+        "title": "Education",
+        "text_1": "Bachelor's degree in web development",
+        "text_2": "Master's degree in Sociology"
+      }
+  },
+  "skills": {
+    "text_1": "Explore my",
+    "text_2": "Skills",
+    "backend": {
+      "title": "Backend Development",
+      "skills": {
+        "ruby_on_rails": {"name": "Ruby On Rails", "level": "Experienced"},
+        "ruby": {"name": "Ruby", "level": "Experienced"},
+        "javascript": {"name": "JavaScript", "level": "Experienced"}
+      }
+    },
+    "frontend": {
+      "title": "Frontend Development",
+      "skills": {
+        "react": {"name": "React.js", "level": "Experienced"},
+        "turbo": {"name": "Turbo", "level": "Experienced"},
+        "stimulus": {"name": "Stimulus", "level": "Experienced"},
+        "tailwind": {"name": "Tailwind CSS", "level": "Experienced"}
+      }
+    },
+    "database": {
+      "title": "Database",
+      "skills": {
+          "postgresql": {"name": "PostgreSQL", "level": "Experienced"},
+          "mysql": {"name": "MySQL", "level": "Basic"},
+          "redis": {"name": "Redis", "level": "Basic"}
+      }
+    },
+    "testing": {
+      "title": "Testing",
+      "skills": {
+        "rspec": {"name": "RSpec", "level": "Experienced"},
+        "tdd": {"name": "TDD", "level": "Experienced"},
+        "selenium": {"name": "Selenium", "level": "Basic"}
+      }
+    },
+    "devops": {
+      "title": "DevOps",
+      "skills": {
+        "aws": { "name": "AWS", "level": "Basic" },
+        "docker": { "name": "Docker", "level": "Basic" },
+        "jenkins": { "name": "Jenkins", "level": "Basic" },
+        "github": { "name": "GitHub", "level": "Experienced" },
+        "raspberry": { "name": "Raspberry Pi", "level": "Basic" }
+      }
+    }
+  },
+  "experiences": {
+    "text_1": "Discover my",
+    "text_2": "Experience",
+    "experiences_list": {
+      "experience_1": {
+        "title": "Full Stack Ruby On Rails Developer",
+        "date": "2021 - 2024",
+        "company": "Holivia",
+        "location": "Montpellier, France",
+        "description": {
+          "text_1": "Feature Creation: Developing new features for web applications using Ruby on Rails, Turbo, React, RSpec, PostgreSQL, and ElasticSearch.",
+          "text_2": "Bug Fixing: Efficiently resolving complex bugs to enhance application stability and performance.",
+          "text_3": "Deployment and CI/CD: Setting up continuous integration and deployment pipelines with GitHub Actions, deploying on AWS (EC2, Amazon RDS, ElastiCache, CodePipeline).",
+          "text_4": "Collaboration: Working closely with development teams to adopt best DevOps practices.",
+          "text_5": "Autonomy: Independently managing tasks from development to production deployment."
+        }
+      },
+      "experience_2": {
+        "title": "Web Development and Deployment",
+        "date": "2021 - present",
+        "company": "Personal Projects",
+        "location": "Online",
+        "description": {
+          "text_1": "Personal Server: Installation and configuration of a server on Raspberry Pi with Apache2 and Webmin.",
+          "text_2": "Web Development: Creating dynamic websites using Ruby on Rails and Node.js.",
+          "text_3": "Automation: Implementing continuous integration and deployment via GitHub Actions and Jenkins.",
+          "text_4": "Server Management: Maintenance and remote administration of the server via SSH.",
+          "text_5": "Experimentation: Exploring new technologies and practices to enhance my technical skills."
+        }
+      },
+      "experience_3": {
+        "title": "Creation of Dynamic Websites",
+        "date": "2020 - 3 months",
+        "company": "The Hacking Project",
+        "location": "Online",
+        "description": {
+          "text_1": "Collaborative Work: Participated in team projects with 5 people.",
+          "text_2": "Cat Store: Developed an e-commerce shop in one week.",
+          "text_3": "WhiteBoard: Created a web platform in two weeks.",
+          "text_4": "Technologies Used: Ruby, Ruby on Rails, HTML, CSS, Bootstrap, JavaScript, jQuery.",
+          "text_5": "Project Management: Used Trello for task organization and tracking.",
+          "text_6": "Skills Developed: Applied agile methodologies, strengthened full-stack development skills."
+        }
+      }
+    }
+  },
+  "projects": {
+    "text_1": "Discover my",
+    "text_2": "Projects",
+    "view_code": "View code",
+    "view_live": "View live",
+    "projects_list": {
+      "project_1": {
+        "title": "Portfolio",
+        "date": "2024",
+        "image_path": "/project-catstore.png",
+        "github_url": "https://www.github.com/elviajero971/cat_store",
+        "live_url": null
+      },
+      "project_2": {
+        "title": "Cat Store",
+        "date": "2020",
+        "image_path": "/project-catstore.png",
+        "github_url": "https://www.github.com/elviajero971/cat_store",
+        "live_url": null
+      },
+      "project_3": {
+        "title": "Whiteboard",
+        "date": "2020",
+        "image_path": "/project-whiteboard.png",
+        "github_url": "https://www.github.com/elviajero971/THP_Final_Project_Schoolink",
+        "live_url": null
+      },
+      "project_4": {"title": "Amiibos",
+        "date": "2019",
+        "image_path": "/project-amiibos.png",
+        "github_url": "https://github.com/elviajero971/react-amiibo-app",
+        "live_url": "https://amiibos.nomadev.online/"}
+    }
+  },
+  "educations": {
+    "text_1": "Discover my",
+    "text_2": "Education",
+    "educations_list": {
+      "education_1": {
+        "title": "Bac+2 Web and Mobile Web Developer",
+        "date": "September 2020 - May 2021",
+        "school": "ADRAR",
+        "location": "Montpellier, France",
+        "description": {
+          "text_1": "Languages and Technologies studied: PHP, Symfony, Node.js, HTML, CSS, Javascript, React, MySQL, MongoDB",
+          "text_2": "Mastery of web development fundamentals.",
+          "text_3": "Ability to develop complete and efficient web applications.",
+          "text_4": "Understanding of web architectures and coding best practices."
+        }
+      },
+      "education_2": {
+        "title": "Web Development Bootcamp",
+        "date": "April 2020 - June 2020",
+        "school": "The Hacking Project",
+        "location": "Online",
+        "description": {
+          "text_1": "Intensive bootcamp focused on learning web programming through peer-learning.",
+          "text_2": "Languages and Technologies studied: Ruby, Ruby on Rails, HTML, CSS, JavaScript, jQuery, PostgreSQL",
+          "text_3": "Methodologies: OOP, TDD",
+          "text_4": "Achievements: Participation in several collaborative projects, applying acquired skills to real-world projects."
+        }
+      },
+      "education_3": {
+        "title": "Online Courses",
+        "date": "2020 - present",
+        "school": "OpenClassrooms",
+        "location": "Online",
+        "description": {
+          "text_1": "HTML/CSS: Basics of web development and responsive design.",
+          "text_2": "Ruby: Mastery of the Ruby language for back-end development.",
+          "text_3": "Ruby on Rails: Ability to build web applications with the Rails framework.",
+          "text_4": "JavaScript: Skills in client-side scripting for interactive user interfaces.",
+          "text_5": "DevOps: Knowledge of continuous integration and deployment practices."
+        }
+      }
+    }
+  },
+  "contact": {
+    "text_1": "Get in touch",
+    "text_2": "Contact me",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import '../../../scss/theme';
+@import '../../../scss/layout';
+
+article {
+  display: flex;
+  justify-content: space-around;
+  gap: 0.5rem;
+
+  img {
+    width: 2rem;
+    cursor: default;
+  }
+}
+
+
+@media screen and (max-width: $breakpoint-tablet) {
+  article {
+    img {
+      width: 1.5rem;
+    }
+  }
+}

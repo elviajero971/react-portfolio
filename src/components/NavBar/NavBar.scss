@@ -1,0 +1,145 @@
+@import '../../scss/animationButtonNavBar';
+@import '../../scss/theme';
+@import '../../scss/layout';
+
+@mixin scaleRotate($scaleAmount, $rotation, $duration) {
+  transition: transform $duration ease-in-out;
+  &:hover {
+    transform: scale($scaleAmount) rotate($rotation);
+  }
+}
+
+/* DESKTOP NAV */
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+
+
+
+  .logo_container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    img {
+      display: inline-block; /* To allow the transform to work properly */
+      width: 3rem;
+      height: 3rem;
+      color: var(--primary-text-color);
+
+      @include scaleRotate(1.4, 360deg, 1s);
+    }
+  }
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+
+  li a {
+    text-decoration: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+    display: inline-block;
+
+    color: var(--secondary-text-color);
+
+    &:hover {
+      color: var(--primary-text-color);
+      transform: scale(1.1);
+    }
+  }
+
+  li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: .1rem;
+    background-color: var(--primary-colored-text);
+    margin-top: 0.2rem;
+    transition: width 0.5s ease;
+  }
+
+  li a:hover::after {
+    width: 100%;
+  }
+}
+
+.logo {
+  font-size: 2rem;
+
+  &:hover {
+    cursor: default;
+  }
+}
+
+/* HAMBURGER MENU */
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Dark/Light Mode and Language Buttons */
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+
+  .lang-button {
+    border: none;
+    cursor: pointer;
+    color: var(--primary-text-color);
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      color: var(--secondary-text-color);
+    }
+  }
+
+  .dark-mode-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    img {
+      width: 24px;
+      height: 24px;
+      transition: filter 0.1s ease-in-out;
+    }
+
+    .dark-mode-icon {
+      filter: invert(100%);
+    }
+
+    .light-mode-icon {
+      filter: invert(0%);
+    }
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+    align-items: center;
+  }
+}
