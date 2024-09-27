@@ -1,0 +1,22 @@
+@import '../../../scss/layout.scss';
+@import '../../../scss/theme.scss';
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+
+  // put same border as the card
+  border: 1px solid var(--primary-colored-text);
+  border-radius: 10px;
+  padding: 1rem;
+  .experience_header {
+  }
+  ul.experience_description {
+    li {
+      text-align: left;
+      // go to the next line if the text is too long
+      white-space: pre-wrap;
+    }
+  }
+}

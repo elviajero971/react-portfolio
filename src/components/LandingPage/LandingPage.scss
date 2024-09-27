@@ -46,7 +46,7 @@ section.landing_page{
     height: 100%;
     .container_pic {
       img {
-        width: 24rem;
+        width: 36rem;
         margin-top: 2rem;
       }
     }
@@ -54,6 +54,17 @@ section.landing_page{
     .container_text {
       .container_btn {
         gap: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+  section.landing_page {
+    .container_pic {
+      img {
+        width: 100%;
+        height: auto;
       }
     }
   }

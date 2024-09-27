@@ -14,14 +14,16 @@ const Experience: React.FC<ExperienceProps> = ({ title, date, company, location,
     return (
         <div className="experience">
             <div className="experience_header">
-                <h3>{title}</h3>
+                <h3 className="title">{title}</h3>
+                <div className="details">
+                    <p>{company}</p>
+                    <p>{location}</p>
+                </div>
+
             </div>
-            <div>
-                <p>{company}</p>
-                <p>{location}</p>
-            </div>
+
             <p>{date}</p>
-            <ul>
+            <ul className="experience_description">
                 {Object.values(description).map((item: string, index: number) => (
                     <li key={index}>{item}</li>
                 ))}

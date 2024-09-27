@@ -4,16 +4,17 @@
 form {
     display: flex;
     flex-direction: column;
-    background-color: var(--background-color); // Replace with a suitable background color from theme
+    background-color: var(--background-color);
 
     input, textarea {
         display: flex;
         padding: 0.75rem;
-        border: 1px solid var(--primary-text-color); // Use a suitable color from your theme
+        border: 2px solid var(--primary-colored-text); // Use a suitable color from your theme
         border-radius: 5px;
         font-size: 1rem;
         background-color: var(--background-color); // Replace with color from theme
         color: var(--primary-text-color);
+        outline: none;
 
         &::placeholder {
             color: var(--primary-text-color); // Style placeholder text from theme
@@ -29,8 +30,6 @@ form {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        gap: 2rem; /* Adds a fixed gap of 2rem between the elements */
-        width: 100%;
 
         @media (min-width: 1000px) {
             flex-direction: row;
