@@ -11,14 +11,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 10rem;
+    margin: 0 10rem 8rem 10rem;
   }
 }
 
 @media screen and (max-width: $breakpoint-tablet) {
   .app {
     section {
-      margin: 0 8rem;
+      margin: 8rem 3rem;
     }
   }
 }
@@ -26,7 +26,7 @@
 @media screen and (max-width: $breakpoint-mobile) {
   .app {
     section {
-      margin: 0 1rem;
+      margin: 3rem 1rem;
     }
   }
 }

@@ -3,17 +3,13 @@ import './Skill.scss'; // Add appropriate styles here
 
 interface SkillProps {
     name: string;
-    level: string;
 }
 
-const Skill: React.FC<SkillProps> = ({ name, level }) => {
+const Skill: React.FC<SkillProps> = ({ name }) => {
     return (
         <article>
-            <img src="/checkmark.png" alt="Skills icon" className="icon" />
-            <div>
-                <h3>{name}</h3>
-                <p>{level}</p>
-            </div>
+            <img src="/checkmark.svg" alt="Skills icon" className="icon" />
+            <h3>{name}</h3>
         </article>
     );
 };

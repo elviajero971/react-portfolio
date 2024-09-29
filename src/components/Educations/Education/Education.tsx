@@ -12,20 +12,22 @@ interface EducationProps {
 const Education: React.FC<EducationProps> = ({ title, date, school, location, description }) => {
 
     return (
-        <div className="education">
-            <div className="education_header">
-                <h3>{title}</h3>
+        <div className="paragraph">
+            <div className="paragraph_header">
+                <h2 className="title">{title}</h2>
+                <div className="details">
+                    <p>{date}</p>
+                    <div className="vertical_line"></div>
+                    <p>{school}</p>
+                    <div className="vertical_line"></div>
+                    <p>{location}</p>
+                </div>
+                <ul className="paragraph_description">
+                    {Object.values(description).map((item: string, index: number) => (
+                        <li key={index}>{item}</li>
+                    ))}
+                </ul>
             </div>
-            <div>
-                <p>{school}</p>
-                <p>{location}</p>
-            </div>
-            <p>{date}</p>
-            <ul>
-                {Object.values(description).map((item: string, index: number) => (
-                    <li key={index}>{item}</li>
-                ))}
-            </ul>
         </div>
     );
 };

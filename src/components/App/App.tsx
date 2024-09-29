@@ -8,6 +8,7 @@ import Experiences from "../Experiences/Experiences";
 import Projects from "../Projects/Projects";
 import Educations from "../Educations/Educations";
 import Contact from "../Contact/Contact";
+import Footer from "../Footer/Footer";
 import '../../scss/_layout.scss';
 import '../../scss/_theme.scss';
 
@@ -22,6 +23,7 @@ const App: React.FC = () => {
         <Projects />
         <Educations />
         <Contact />
+        <Footer />
       </div>
   );
 };

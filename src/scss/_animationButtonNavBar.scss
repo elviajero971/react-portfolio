@@ -28,12 +28,14 @@
 .menu-links {
   position: absolute;
   top: 100%;
-  right: 0;
-  background-color: var(--primary-text-color);
+  right: -6rem;
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
   width: fit-content;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
+  z-index: 999;
 }
 
 .menu-links a {
@@ -41,7 +43,7 @@
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: black;
+  color: var(--primary-text-color);
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
@@ -68,12 +70,5 @@
 
 .hamburger-icon span:first-child {
   transform: none;
-}
-
-.hamburger-icon span:first-child {
   opacity: 1;
-}
-
-.hamburger-icon span:first-child {
-  transform: none;
 }

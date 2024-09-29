@@ -25,6 +25,20 @@ section.landing_page{
     .container_btn{
       display: flex;
       gap: 2rem;
+
+      a{
+        svg{
+          width: 4rem;
+          height: 4rem;
+          color: var(--primary-colored-text);
+
+          &:hover{
+            color: var(--primary-colored-text-darker);
+            scale: 1.1;
+          }
+        }
+      }
+
     }
 
   }

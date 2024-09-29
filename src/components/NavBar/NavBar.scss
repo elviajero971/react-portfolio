@@ -15,12 +15,21 @@ nav,
   display: flex;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  /* Apply transparent background and blur */
+  background-color: var(--background-color);
+  height: 5rem;
+}
+
 nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
-
-
 
   .logo_container {
     display: flex;
@@ -62,9 +71,9 @@ nav {
     display: block;
     width: 0;
     height: .1rem;
-    background-color: var(--primary-colored-text);
     margin-top: 0.2rem;
     transition: width 0.5s ease;
+    background: var(--primary-colored-text);
   }
 
   li a:hover::after {
@@ -88,6 +97,8 @@ nav {
 .hamburger-menu {
   position: relative;
   display: inline-block;
+  color: var(--primary-text-color);
+  background-color: var(--background-color);
 }
 
 .buttons {

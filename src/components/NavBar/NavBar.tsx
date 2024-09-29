@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import './NavBar.scss';
 
@@ -6,6 +6,26 @@ const NavBar: React.FC = () => {
     const { i18n } = useTranslation();
     const [darkMode, setDarkMode] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
+    const [isSticky, setIsSticky] = useState(false); // New state to track stickiness
+
+    useEffect(() => {
+        const handleScroll = () => {
+            // 10rem equals 160px
+            if (window.scrollY > 60) {
+                setIsSticky(true); // Add 'stick' class
+            } else {
+                setIsSticky(false); // Remove 'stick' class
+            }
+        };
+
+        // Attach scroll event listener
+        window.addEventListener('scroll', handleScroll);
+
+        // Cleanup event listener on component unmount
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []); // Empty dependency array ensures this runs only once
 
     const changeLanguage = (lang: string) => {
         i18n.changeLanguage(lang);
@@ -20,14 +40,24 @@ const NavBar: React.FC = () => {
         setMenuOpen(!menuOpen);
     };
 
+    // Function to scroll to the top when the logo is clicked
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // This ensures the scrolling is smooth
+        });
+    };
+
     const { t } = useTranslation();
 
     return (
         <>
             {/* Desktop Nav */}
-            <nav id="desktop-nav">
+            <nav id="desktop-nav" className={isSticky ? 'sticky' : ''}>
                 <div className="logo_container">
-                    <img src="/logo.svg" alt=""/>
+                    <a href="#" onClick={scrollToTop}>
+                        <img src="/logo.svg" alt="Logo"/>
+                    </a>
                     <p>Lucas Illiano</p>
                 </div>
                 <div>
@@ -41,8 +71,8 @@ const NavBar: React.FC = () => {
                     </ul>
                 </div>
                 <div className="nav-buttons">
-                <button onClick={() => changeLanguage('en')} className="lang-button">EN</button>
-                     <button onClick={() => changeLanguage('fr')} className="lang-button">FR</button>
+                    <button onClick={() => changeLanguage('en')} className="lang-button">EN</button>
+                    <button onClick={() => changeLanguage('fr')} className="lang-button">FR</button>
                     <button onClick={toggleDarkMode} className="dark-mode-toggle">
                         {darkMode ? (
                             <img src="/moon-icon.png" alt="Dark Mode" className="dark-mode-icon" />
@@ -77,14 +107,13 @@ const NavBar: React.FC = () => {
                         <button onClick={() => changeLanguage('fr')} className="lang-button">FR</button>
                         <button onClick={toggleDarkMode} className="dark-mode-toggle">
                             {darkMode ? (
-                                <img src="/moon-icon.png" alt="Dark Mode" className="dark-mode-icon"/>
+                                <img src="/moon-icon.png" alt="Dark Mode" className="dark-mode-icon" />
                             ) : (
-                                <img src="/sun-icon.png" alt="Light Mode" className="light-mode-icon"/>
+                                <img src="/sun-icon.png" alt="Light Mode" className="light-mode-icon" />
                             )}
                         </button>
                     </div>
                 </div>
-
             </nav>
         </>
     );

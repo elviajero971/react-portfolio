@@ -13,7 +13,9 @@
       "text_3": "Backend Developer",
       "cv_path": "/cv.pdf",
       "text_btn_cv": "Download CV",
-      "text_btn_contact": "Contact me"
+      "text_btn_contact": "Contact me",
+    "github": "https://github.com/elviajero971/",
+    "linkedin": "https://www.linkedin.com/in/lucas-illiano/"
   },
   "about": {
       "text_1": "Get to know more",

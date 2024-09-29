@@ -5,6 +5,8 @@ form {
     display: flex;
     flex-direction: column;
     background-color: var(--background-color);
+    width: 650px;
+    gap: 1rem;
 
     input, textarea {
         display: flex;
@@ -19,6 +21,10 @@ form {
         &::placeholder {
             color: var(--primary-text-color); // Style placeholder text from theme
         }
+        &:focus {
+            border-color: var(--primary-colored-text-darker); // Style focus state from theme
+            scale: 1.1;
+        }
     }
 
     textarea {
@@ -30,6 +36,7 @@ form {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        gap: 1rem;
 
         @media (min-width: 1000px) {
             flex-direction: row;
@@ -50,18 +57,9 @@ form {
     }
 }
 
-// Responsive styles for larger screens
-@media (min-width: $breakpoint-desktop-medium) {
+@media (max-width: $breakpoint-mobile) {
     form {
-        max-width: 800px;
-        padding: 2rem;
-        display: flex;
-        justify-content: space-between;
-
-        .form-inputs {
-            flex-direction: row;
-            justify-content: space-between;
-
-        }
+        width: 100%;
+        gap: 1rem;
     }
 }

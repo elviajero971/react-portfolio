@@ -22,7 +22,6 @@ const Skills: React.FC = () => {
                                         <Skill
                                             key={index}
                                             name={skill.name}
-                                            level={skill.level}
                                         />
                                     )
                                 )}

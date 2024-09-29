@@ -6,12 +6,6 @@ import ContactForm from './ContactForm/ContactForm';
 const Contact: React.FC = () => {
     const { t } = useTranslation();
 
-    // Fetching the projects list and converting it to an array
-
-    const projects_list = Object.values(t('projects.projects_list', {returnObjects: true}))
-
-    console.log('projects_list', projects_list)
-
     return (
         <section id="contact" className="contact">
             <p className="subtitle">{t('contact.text_1')}</p>

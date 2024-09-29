@@ -4,16 +4,10 @@
 section.skills{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    margin-top: 4rem;
     .details_container{
         display: flex;
         justify-content: center;
         flex-direction: column;
-
-        h2{
-            margin-bottom: 2rem;
-        }
 
         .skills_container{
             display: flex;
