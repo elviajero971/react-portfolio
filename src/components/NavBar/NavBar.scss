@@ -35,14 +35,22 @@ nav {
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    img {
-      display: inline-block; /* To allow the transform to work properly */
-      width: 3rem;
-      height: 3rem;
-      color: var(--primary-text-color);
+    // remove default button styles
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
 
-      @include scaleRotate(1.4, 360deg, 1s);
+      img {
+        display: inline-block; /* To allow the transform to work properly */
+        width: 3rem;
+        height: 3rem;
+        color: var(--primary-text-color);
+
+        @include scaleRotate(1.4, 360deg, 1s);
+      }
     }
+
   }
 }
 

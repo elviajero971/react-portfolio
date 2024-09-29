@@ -55,9 +55,9 @@ const NavBar: React.FC = () => {
             {/* Desktop Nav */}
             <nav id="desktop-nav" className={isSticky ? 'sticky' : ''}>
                 <div className="logo_container">
-                    <a href="#" onClick={scrollToTop}>
+                    <button onClick={scrollToTop}>
                         <img src="/logo.svg" alt="Logo"/>
-                    </a>
+                    </button>
                     <p>Lucas Illiano</p>
                 </div>
                 <div>

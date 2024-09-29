@@ -19,10 +19,10 @@ const Project: React.FC<ProjectProps> = ({ title, date, image_path, github_url, 
             <h2>{title} - {date}</h2>
             <div className="buttons_container">
                 { github_url && (
-                    <a href={github_url} className="btn" target="_blank">{t('projects.view_code')}</a>
+                    <a href={github_url} className="btn" target="_blank" rel="noreferrer">{t('projects.view_code')}</a>
                 )}
                 { project_url && (
-                    <a href={project_url} className="btn" target="_blank">{t('projects.view_live')}</a>
+                    <a href={project_url} className="btn" target="_blank" rel="noreferrer">{t('projects.view_live')}</a>
                 )}
             </div>
         </div>
