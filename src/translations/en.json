@@ -134,9 +134,9 @@
       "project_1": {
         "title": "Portfolio",
         "date": "2024",
-        "image_path": "/project-catstore.png",
-        "github_url": "https://www.github.com/elviajero971/cat_store",
-        "live_url": null
+        "image_path": "/project-portfolio-fr.png",
+        "github_url": "https://github.com/elviajero971/react-portfolio",
+        "live_url": "https://nomadev.online/"
       },
       "project_2": {
         "title": "Cat Store",
