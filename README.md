@@ -36,11 +36,8 @@ Here's an overview of the folder structure of this project:
 
 ### Key Folders:
 - **`components/`**: Contains all reusable UI components like buttons, cards, modals, etc.
-- **`pages/`**: Includes the different pages of the portfolio, such as `Home`, `Projects`, and `About`.
-- **`hooks/`**: Custom hooks for handling side effects or logic that are shared across components.
-- **`styles/`**: Global CSS, variables, or utility classes, if using plain CSS or CSS Modules/Tailwind CSS.
-- **`utils/`**: Helper functions that can be used across the application.
-- **`types/`**: Common TypeScript types and interfaces used across the app.
+- **`scss/`**: Contains utility functions and styles for the application.
+- **`translations/`**: Contains language files for internationalization (i18n) of the application.
 
 ## 🛠️ Getting Started
 
@@ -89,28 +86,13 @@ npm run build
 yarn build
 ```
 
-This will generate optimized static files in the `build/` folder, which can be deployed to any hosting service.
-
-## ⚙️ Running Tests
-
-If there are unit tests or integration tests, you can run them using the following command:
-
-```bash
-npm test
-# OR
-yarn test
-```
-
 This command runs the test suite defined in the repository, ensuring all components and functionality work as expected.
 
 ## 🧩 Technologies Used
 
 - **React**: JavaScript library for building user interfaces.
 - **TypeScript**: Superset of JavaScript providing static type definitions.
-- **React Router**: For handling client-side routing.
 - **CSS Modules**: For styling components.
-- **ESLint** and **Prettier**: For maintaining code quality and consistent formatting.
-- **Jest** and **React Testing Library**: For unit and integration testing.
 
 ## 🤝 Contributing
 
