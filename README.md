@@ -10,12 +10,11 @@ This repository contains the code for my **personal portfolio** built with **Rea
 - Built with **TypeScript** for type safety and better development experience.
 - Modular and scalable component architecture.
 - **Responsive design** that adapts to all screen sizes (mobile, tablet, desktop).
-- **Reusable components** and styles using CSS Modules/Tailwind CSS.
-- Easy configuration and customization.
+- **Reusable components** and styles using sass and CSS modules.
 
 ## 🗂️ Project Structure
 
-The folder structure of this repository follows a typical React project setup with TypeScript. Here's an overview:
+Here's an overview of the folder structure of this project:
 
 ```bash
 .
@@ -57,7 +56,7 @@ Clone this repository and install the dependencies:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/portfolio.git
+git clone https://github.com/elviajero971/react-portfolio.git
 
 # Navigate to the project directory
 cd portfolio
@@ -109,20 +108,13 @@ This command runs the test suite defined in the repository, ensuring all compone
 - **React**: JavaScript library for building user interfaces.
 - **TypeScript**: Superset of JavaScript providing static type definitions.
 - **React Router**: For handling client-side routing.
-- **CSS Modules** or **Tailwind CSS**: For styling components.
+- **CSS Modules**: For styling components.
 - **ESLint** and **Prettier**: For maintaining code quality and consistent formatting.
 - **Jest** and **React Testing Library**: For unit and integration testing.
 
 ## 🤝 Contributing
 
 If you'd like to contribute to this project, feel free to fork the repository and submit a pull request. All contributions, feedback, and suggestions are welcome!
-
-### How to Contribute:
-1. Fork the repository.
-2. Create a new feature branch (`git checkout -b feature/your-feature`).
-3. Commit your changes (`git commit -m "Add some feature"`).
-4. Push to the branch (`git push origin feature/your-feature`).
-5. Open a pull request.
 
 ## 🌐 Live Demo
 
