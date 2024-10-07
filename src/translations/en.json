@@ -156,7 +156,15 @@
         "date": "2019",
         "image_path": "/project-amiibos.png",
         "github_url": "https://github.com/elviajero971/react-amiibo-app",
-        "live_url": "https://amiibos.nomadev.online/"}
+        "live_url": "https://amiibos.nomadev.online/"
+      },
+        "project_5": {
+          "title": "Todo List",
+          "date": "2024",
+          "image_path": "/project-todo-list.png",
+          "github_url": "https://github.com/elviajero971/todo_app",
+          "live_url": "https://todo-app-frontend-tawny.vercel.app/"
+        }
     }
   },
   "educations": {

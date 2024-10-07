@@ -18,6 +18,9 @@ Here's an overview of the folder structure of this project:
 
 ```bash
 .
+├── .github                 # GitHub Actions workflows
+│   └── workflows           # CI/CD workflows
+│       └── main.yml        # Main workflow file
 ├── public                  # Static assets (HTML, images, etc.)
 │   └── index.html          # Entry point for the application
 ├── src                     # Main application source code
@@ -44,7 +47,7 @@ Here's an overview of the folder structure of this project:
 ### Prerequisites
 
 Ensure you have the following installed on your machine:
-- **Node.js** (version 14.x or higher)
+- **Node.js**
 - **npm** or **yarn**
 
 ### Installation

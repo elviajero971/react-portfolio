@@ -11,7 +11,7 @@ const About: React.FC = () => {
             <h1>{t('about.text_2')}</h1>
             <div className="content">
                 <div className="pic_container">
-                    <img src="/profile-pic.png" alt="Profile" className="about-pic"/>
+                    <img src="/picture_ai.jpeg" alt="Profile" className="about-pic"/>
                 </div>
                 <div className="description_container">
                     <div className="cards">
