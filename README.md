@@ -18,23 +18,41 @@ Here's an overview of the folder structure of this project:
 
 ```bash
 .
-├── .github                 # GitHub Actions workflows
-│   └── workflows           # CI/CD workflows
-│       └── main.yml        # Main workflow file
-├── public                  # Static assets (HTML, images, etc.)
-│   └── index.html          # Entry point for the application
-├── src                     # Main application source code
-│   ├── components          # Reusable React components
-│   ├── scss               # Utility functions/helpers
-│   ├── translations        # Language files
-│   │   ├── en.json         # English language translations
-│   │   └── fr.json         # French language translations
-│   ├── i18.ts              # i18n configuration
-│   └── index.tsx           # Application entry point
-├── package.json            # Project dependencies and scripts
-├── tsconfig.json           # TypeScript configuration
-├── README.md               # This file
-└── .gitignore              # Ignored files in Git
+├── .github                                     # GitHub Actions workflows
+│   └── workflows                               # CI/CD workflows
+│       └── main.yml                            # Main workflow file
+├── public                                      # Static assets (HTML, images, etc.)
+│   └── index.html                              # Entry point for the application
+├── src                                         # Main application source code
+│   ├── components                              # List of React components
+│   │   ├── About                               
+│   │   ├── App                                 
+│   │   ├── Contact                             
+│   │   ├── Educations                          
+│   │   ├── Experiences                         
+│   │   ├── FlashMessage                        
+│   │   ├── Footer                              
+│   │   ├── LandingPage                         
+│   │   ├── NavBar                              
+│   │   ├── Projects                            
+│   │   │   └── Project                         
+│   │   ├── Shared
+│   │   │   └── LanguageButton                              
+│   │   └── Skills                              
+│   │       └── Skill                           
+│   ├── scss                                    # Styles for the application
+│   │   ├── _animationButtonNavBar.scss         # Animation for button in navbar
+│   │   ├── _layout.scss                        # Layout styles
+│   │   └── _theme.scss                         # Theme variables
+│   ├── translations                            # Language files
+│   │   ├── en.json                             # English language translations
+│   │   └── fr.json                             # French language translations
+│   ├── i18.ts                                  # i18n configuration
+│   └── index.tsx                               # Application entry point
+├── package.json                                # Project dependencies and scripts
+├── tsconfig.json                               # TypeScript configuration
+├── README.md                                   # This file
+└── .gitignore                                  # Ignored files in Git
 ```
 
 ### Key Folders:
@@ -103,7 +121,7 @@ If you'd like to contribute to this project, feel free to fork the repository an
 
 ## 🌐 Live Demo
 
-You can view the live version of this portfolio at: [nomadev.online](https://your-portfolio-site.com)
+You can view the live version of this portfolio at: [nomadev.online](https://nomadev.online)
 
 ## 📬 Contact
 
