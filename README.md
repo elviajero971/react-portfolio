@@ -121,12 +121,12 @@ If you'd like to contribute to this project, feel free to fork the repository an
 
 ## 🌐 Live Demo
 
-You can view the live version of this portfolio at: [nomadev.online](https://nomadev.online)
+You can view the live version of this portfolio at: [nomadev.online](https://nomadev.online){:target="_blank"}
 
 ## 📬 Contact
 
-- **Email**: [lucas.illiano@hotmail.com](mailto:your-email@example.com)
-- **LinkedIn**: [https://www.linkedin.com/in/lucas-illiano/](https://linkedin.com/in/your-linkedin)
-- **GitHub**: [https://github.com/elviajero971/](https://github.com/your-username)
+- **Email**: [lucas.illiano@hotmail.com](mailto:your-email@example.com){:target="_blank"}
+- **LinkedIn**: [https://www.linkedin.com/in/lucas-illiano/](https://linkedin.com/in/your-linkedin){:target="_blank"}
+- **GitHub**: [https://github.com/elviajero971/](https://github.com/your-username){:target="_blank"}
 
 Feel free to reach out if you have any questions or want to collaborate on a project!
