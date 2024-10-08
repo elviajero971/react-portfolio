@@ -34,15 +34,29 @@ form {
 
     .form-inputs {
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 1rem;
+        flex-direction: row;
+        input {
+            flex: 1;
 
-        @media (min-width: 1000px) {
-            flex-direction: row;
+            &:first-child {
+                margin-right: 1rem;
+            }
+        }
+
+    }
+
+    @media (max-width: 1000px) {
+        .form-inputs {
+            flex-direction: column;
             input {
                 flex: 1;
+
+                &:first-child {
+                    margin-right: 0;
+                    margin-bottom: 1rem;
+                }
             }
+
         }
     }
 

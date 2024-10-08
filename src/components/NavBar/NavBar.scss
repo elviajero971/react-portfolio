@@ -45,7 +45,6 @@ nav {
         display: inline-block; /* To allow the transform to work properly */
         width: 3rem;
         height: 3rem;
-        color: var(--primary-text-color);
 
         @include scaleRotate(1.4, 360deg, 1s);
       }
@@ -114,22 +113,10 @@ nav {
   gap: 1rem;
 }
 
-/* Dark/Light Mode and Language Buttons */
+/* Dark/Light Mode */
 .nav-buttons {
   display: flex;
   gap: 1rem;
-
-  .lang-button {
-    border: none;
-    cursor: pointer;
-    color: var(--primary-text-color);
-    background-color: transparent;
-    transition: background-color 0.3s ease;
-
-    &:hover {
-      color: var(--secondary-text-color);
-    }
-  }
 
   .dark-mode-toggle {
     background: none;

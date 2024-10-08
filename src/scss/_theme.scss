@@ -15,14 +15,10 @@
   --primary-text-color: #f6f6f6;
   --secondary-text-color: #b0b0b0;
   --primary-colored-text: #d012ed;
-    --primary-colored-text-darker: #a00fba;
+  --primary-colored-text-darker: #a00fba;
 
-  img {
+  img.project-pic, img.icon, img.profile-pic, img.about-pic {
     filter: grayscale(100%);
-  }
-
-  img.card-pic, img.icon {
-    filter: invert(1);
   }
 }
 

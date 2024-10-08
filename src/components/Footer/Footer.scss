@@ -19,6 +19,11 @@ div.footer {
       width: 2rem;
       height: 2rem;
       margin: 0 1rem;
+      transition: transform 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
 }

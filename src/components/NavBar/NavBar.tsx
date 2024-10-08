@@ -1,31 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import LanguageButton from '../Shared/LanguageButton'; // Import LanguageButton component
 import './NavBar.scss';
 
 const NavBar: React.FC = () => {
-    const { i18n } = useTranslation();
+    const { i18n, t } = useTranslation();
     const [darkMode, setDarkMode] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
-    const [isSticky, setIsSticky] = useState(false); // New state to track stickiness
+    const [isSticky, setIsSticky] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
-            // 10rem equals 160px
-            if (window.scrollY > 60) {
-                setIsSticky(true); // Add 'stick' class
-            } else {
-                setIsSticky(false); // Remove 'stick' class
-            }
+            setIsSticky(window.scrollY > 60);
         };
-
-        // Attach scroll event listener
         window.addEventListener('scroll', handleScroll);
-
-        // Cleanup event listener on component unmount
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []); // Empty dependency array ensures this runs only once
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     const changeLanguage = (lang: string) => {
         i18n.changeLanguage(lang);
@@ -40,15 +30,14 @@ const NavBar: React.FC = () => {
         setMenuOpen(!menuOpen);
     };
 
-    // Function to scroll to the top when the logo is clicked
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
-            behavior: 'smooth' // This ensures the scrolling is smooth
+            behavior: 'smooth',
         });
     };
 
-    const { t } = useTranslation();
+    const languages = ['en', 'fr']; // Dynamically handle multiple languages
 
     return (
         <>
@@ -56,7 +45,7 @@ const NavBar: React.FC = () => {
             <nav id="desktop-nav" className={isSticky ? 'sticky' : ''}>
                 <div className="logo_container">
                     <button onClick={scrollToTop}>
-                        <img src="/logo.svg" alt="Logo"/>
+                        <img src={darkMode? "/logo_dark.png" : "/logo_light.png"} alt="Logo" className="logo" />
                     </button>
                     <p>Lucas Illiano</p>
                 </div>
@@ -71,8 +60,14 @@ const NavBar: React.FC = () => {
                     </ul>
                 </div>
                 <div className="nav-buttons">
-                    <button onClick={() => changeLanguage('en')} className="lang-button">EN</button>
-                    <button onClick={() => changeLanguage('fr')} className="lang-button">FR</button>
+                    {languages.map((lang) => (
+                        <LanguageButton
+                            key={lang}
+                            lang={lang}
+                            currentLang={i18n.language}
+                            changeLanguage={changeLanguage}
+                        />
+                    ))}
                     <button onClick={toggleDarkMode} className="dark-mode-toggle">
                         {darkMode ? (
                             <img src="/moon-icon.png" alt="Dark Mode" className="dark-mode-icon" />
@@ -103,8 +98,14 @@ const NavBar: React.FC = () => {
                         </div>
                     </div>
                     <div className="nav-buttons">
-                        <button onClick={() => changeLanguage('en')} className="lang-button">EN</button>
-                        <button onClick={() => changeLanguage('fr')} className="lang-button">FR</button>
+                        {languages.map((lang) => (
+                            <LanguageButton
+                                key={lang}
+                                lang={lang}
+                                currentLang={i18n.language}
+                                changeLanguage={changeLanguage}
+                            />
+                        ))}
                         <button onClick={toggleDarkMode} className="dark-mode-toggle">
                             {darkMode ? (
                                 <img src="/moon-icon.png" alt="Dark Mode" className="dark-mode-icon" />
