@@ -8,29 +8,29 @@
     "contact": "Contact"
   },
   "profile": {
-      "text_1": "Bonjour, je suis",
-      "text_2": "Lucas Illiano",
-      "text_3": "Développeur Backend",
-      "cv_path": "/cv.pdf",
-      "text_btn_cv": "Télécharger CV",
-      "text_btn_contact": "Contactez-moi",
+    "text_1": "Bonjour, je suis",
+    "text_2": "Lucas Illiano",
+    "text_3": "Développeur Backend",
+    "cv_path": "/cv.pdf",
+    "text_btn_cv": "Télécharger CV",
+    "text_btn_contact": "Contactez-moi",
     "github": "https://github.com/elviajero971/",
     "linkedin": "https://www.linkedin.com/in/lucas-illiano/"
   },
   "about": {
-      "text_1": "En savoir plus",
-      "text_2": "À propos de moi",
-      "text_3": "Je suis un développeur backend passionné par la technologie et les défis. J'ai une expérience de plus de 2 ans dans le développement de logiciels et de sites Web. J'ai travaillé avec des technologies telles que Node.js, Express.js, MongoDB, MySQL, React.js, HTML, CSS, JavaScript, Git, etc.",
-      "experience": {
-        "title": "Expérience",
-        "text_1": "3+ years",
-        "text_2": "Développeur backend"
-      },
-      "education": {
-        "title": "Éducation",
-        "text_1": "Bac +2 en développement web",
-        "text_2": "Master en Sociologie"
-      }
+    "text_1": "En savoir plus",
+    "text_2": "À propos de moi",
+    "text_3": "Je suis un développeur backend passionné par la technologie et les défis. J'ai une expérience de plus de 2 ans dans le développement de logiciels et de sites Web. J'ai travaillé avec des technologies telles que Node.js, Express.js, MongoDB, MySQL, React.js, HTML, CSS, JavaScript, Git, etc.",
+    "experience": {
+      "title": "Expérience",
+      "text_1": "3+ years",
+      "text_2": "Développeur backend"
+    },
+    "education": {
+      "title": "Éducation",
+      "text_1": "Bac +2 en développement web",
+      "text_2": "Master en Sociologie"
+    }
   },
   "skills": {
     "text_1": "Parcourez mes",
@@ -55,27 +55,27 @@
     "database": {
       "title": "Base de données",
       "skills": {
-          "postgresql": { "name": "PostgreSQL", "level": "Expérimenté" },
-          "mysql": { "name": "MySQL", "level": "Expérimenté" },
-          "redis": { "name": "Redis", "level": "Basique" }
+        "postgresql": { "name": "PostgreSQL", "level": "Expérimenté" },
+        "mysql": { "name": "MySQL", "level": "Expérimenté" },
+        "redis": { "name": "Redis", "level": "Basique" }
       }
     },
     "testing": {
       "title": "Tests",
       "skills": {
-          "rspec": { "name": "RSpec", "level": "Expérimenté" },
-          "tdd": { "name": "TDD", "level": "Expérimenté" },
-          "selenium": { "name": "Selenium", "level": "Basique" }
+        "rspec": { "name": "RSpec", "level": "Expérimenté" },
+        "tdd": { "name": "TDD", "level": "Expérimenté" },
+        "selenium": { "name": "Selenium", "level": "Basique" }
       }
     },
     "devops": {
       "title": "DevOps",
       "skills": {
-          "aws": { "name": "AWS", "level": "Basique" },
-          "docker": { "name": "Docker", "level": "Basique" },
-          "jenkins": { "name": "Jenkins", "level": "Basique" },
-          "github": { "name": "GitHub", "level": "Expérimenté" },
-          "raspberry": { "name": "Raspberry Pi", "level": "Basique" }
+        "aws": { "name": "AWS", "level": "Basique" },
+        "docker": { "name": "Docker", "level": "Basique" },
+        "jenkins": { "name": "Jenkins", "level": "Basique" },
+        "github": { "name": "GitHub", "level": "Expérimenté" },
+        "raspberry": { "name": "Raspberry Pi", "level": "Basique" }
       }
     }
   },
@@ -159,13 +159,20 @@
         "github_url": "https://github.com/elviajero971/react-amiibo-app",
         "live_url": "https://amiibos.nomadev.online/"
       },
-        "project_5": {
-          "title": "Todo List",
-          "date": "2024",
-          "image_path": "/project-todo-list.png",
-          "github_url": "https://github.com/elviajero971/todo_app",
-          "live_url": "https://todo-app-frontend-tawny.vercel.app/"
-        }
+      "project_5": {
+        "title": "Todo List",
+        "date": "2024",
+        "image_path": "/project-todo-list.png",
+        "github_url": "https://github.com/elviajero971/todo_app",
+        "live_url": "https://todo-app-frontend-tawny.vercel.app/"
+      },
+      "project_6": {
+        "title": "App Météo",
+        "date": "2024",
+        "image_path": "/project-weather.png",
+        "github_url": "https://github.com/elviajero971/react-weather-app",
+        "live_url": "https://weatherapp.nomadev.online/"
+      }
     }
   },
   "educations": {

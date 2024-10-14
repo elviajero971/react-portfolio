@@ -1,36 +1,36 @@
 {
   "navbar": {
-      "about": "About",
-      "skills": "Skills",
-      "experiences": "Experiences",
-      "projects": "Projects",
-      "educations": "Diplomas",
-      "contact": "Contact"
+    "about": "About",
+    "skills": "Skills",
+    "experiences": "Experiences",
+    "projects": "Projects",
+    "educations": "Diplomas",
+    "contact": "Contact"
   },
   "profile": {
-      "text_1": "Hello, I'm",
-      "text_2": "Lucas Illiano",
-      "text_3": "Backend Developer",
-      "cv_path": "/cv.pdf",
-      "text_btn_cv": "Download CV",
-      "text_btn_contact": "Contact me",
+    "text_1": "Hello, I'm",
+    "text_2": "Lucas Illiano",
+    "text_3": "Backend Developer",
+    "cv_path": "/cv.pdf",
+    "text_btn_cv": "Download CV",
+    "text_btn_contact": "Contact me",
     "github": "https://github.com/elviajero971/",
     "linkedin": "https://www.linkedin.com/in/lucas-illiano/"
   },
   "about": {
-      "text_1": "Get to know more",
-      "text_2": "About me",
-      "text_3": "I am a backend developer passionate about technology and challenges. I have over 2 years of experience in software and website development. I have worked with technologies such as Node.js, Express.js, MongoDB, MySQL, React.js, HTML, CSS, JavaScript, Git, etc.",
-      "experience": {
-        "title": "Experience",
-        "text_1": "3+ years",
-        "text_2": "Backend Developer"
-      },
-      "education": {
-        "title": "Education",
-        "text_1": "Bachelor's degree in web development",
-        "text_2": "Master's degree in Sociology"
-      }
+    "text_1": "Get to know more",
+    "text_2": "About me",
+    "text_3": "I am a backend developer passionate about technology and challenges. I have over 2 years of experience in software and website development. I have worked with technologies such as Node.js, Express.js, MongoDB, MySQL, React.js, HTML, CSS, JavaScript, Git, etc.",
+    "experience": {
+      "title": "Experience",
+      "text_1": "3+ years",
+      "text_2": "Backend Developer"
+    },
+    "education": {
+      "title": "Education",
+      "text_1": "Bachelor's degree in web development",
+      "text_2": "Master's degree in Sociology"
+    }
   },
   "skills": {
     "text_1": "Explore my",
@@ -158,13 +158,20 @@
         "github_url": "https://github.com/elviajero971/react-amiibo-app",
         "live_url": "https://amiibos.nomadev.online/"
       },
-        "project_5": {
-          "title": "Todo List",
-          "date": "2024",
-          "image_path": "/project-todo-list.png",
-          "github_url": "https://github.com/elviajero971/todo_app",
-          "live_url": "https://todo-app-frontend-tawny.vercel.app/"
-        }
+      "project_5": {
+        "title": "Todo List",
+        "date": "2024",
+        "image_path": "/project-todo-list.png",
+        "github_url": "https://github.com/elviajero971/todo_app",
+        "live_url": "https://todo-app-frontend-tawny.vercel.app/"
+      },
+      "project_6": {
+        "title": "Weather App",
+        "date": "2024",
+        "image_path": "/project-weather.png",
+        "github_url": "https://github.com/elviajero971/react-weather-app",
+        "live_url": "https://weatherapp.nomadev.online/"
+      }
     }
   },
   "educations": {
