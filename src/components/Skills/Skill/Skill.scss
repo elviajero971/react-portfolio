@@ -7,7 +7,9 @@ article {
   align-items: center;
   gap: 0.5rem;
 
-  img {
+
+  svg {
+    color: var(--primary-colored-text);
     width: 2rem;
     cursor: default;
   }
@@ -16,7 +18,7 @@ article {
 
 @media screen and (max-width: $breakpoint-tablet) {
   article {
-    img {
+    svg {
       width: 1.5rem;
     }
   }
