@@ -32,7 +32,7 @@ section.skills{
     }
 }
 
-@media screen and (max-width: $breakpoint-tablet) {
+@media (max-width: $breakpoint-tablet) {
     section.skills{
         .details_container{
             .skills_container{

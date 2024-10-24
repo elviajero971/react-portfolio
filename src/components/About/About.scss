@@ -44,7 +44,7 @@ section.about{
   }
 }
 
-@media screen and (max-width: $breakpoint-desktop-large) {
+@media (max-width: $breakpoint-desktop-large) {
   section.about {
     .content {
       flex-direction: column;
@@ -59,7 +59,7 @@ section.about{
   }
 }
 
-@media screen and (max-width: $breakpoint-tablet) {
+@media (max-width: $breakpoint-tablet) {
   section.about {
     .content {
       .description_container {
@@ -76,7 +76,7 @@ section.about{
   }
 }
 
-@media screen and (max-width: $breakpoint-mobile) {
+@media (max-width: $breakpoint-mobile) {
   section.about {
     .content {
       .pic_container {

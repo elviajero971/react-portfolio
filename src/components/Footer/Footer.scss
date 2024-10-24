@@ -27,3 +27,21 @@ div.footer {
     }
   }
 }
+
+// media queries for mobile
+
+@media (max-width: 600px) {
+  div.footer {
+    font-size: 1rem;
+    padding: 1rem;
+    justify-content: unset;
+
+    .footer_links {
+      a img {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: 0 0.5rem;
+      }
+    }
+  }
+}

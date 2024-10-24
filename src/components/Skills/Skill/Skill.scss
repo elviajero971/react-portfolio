@@ -16,7 +16,7 @@ article {
 }
 
 
-@media screen and (max-width: $breakpoint-tablet) {
+@media (max-width: $breakpoint-tablet) {
   article {
     svg {
       width: 1.5rem;

@@ -1,5 +1,5 @@
-@import '../../../scss/theme';
 @import '../../../scss/layout';
+@import '../../../scss/theme';
 
 .project_card{
   display: flex;
@@ -32,3 +32,33 @@
     gap: 1rem;
   }
 }
+
+// media queries for mobile remove hover effect
+
+@media (max-width: $breakpoint-mobile) {
+  .project_card{
+    gap: 1rem;
+    padding: 1rem;
+    &:hover{
+      transform: unset;
+      border-color: var(--primary-colored-text);
+    }
+
+    img.project-pic{
+      height: 12rem;
+    }
+
+    .buttons_container {
+      gap: 0.5rem;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile-small) {
+  .project_card{
+    img.project-pic{
+      height: 10rem;
+    }
+  }
+}
+

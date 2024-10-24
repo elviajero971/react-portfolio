@@ -86,7 +86,7 @@ h2 {
   color: var(--secondary-text-color);
 }
 
-@media screen and (max-width: $breakpoint-desktop-large) {
+@media (max-width: $breakpoint-desktop-large) {
   h1 {
     font-size: 4rem;
   }
@@ -96,12 +96,30 @@ h2 {
   }
 }
 
-@media screen and (max-width: $breakpoint-tablet) {
+@media (max-width: $breakpoint-tablet) {
   h1 {
     font-size: 3rem;
   }
 
   h2 {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 0.8rem 1.2rem;
   }
 }

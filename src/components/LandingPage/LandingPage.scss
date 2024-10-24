@@ -44,7 +44,7 @@ section.landing_page{
   }
 }
 
-@media screen and (max-width: $breakpoint-desktop-large) {
+@media (max-width: $breakpoint-desktop-large) {
   section.landing_page {
     .container_pic {
       img {
@@ -54,7 +54,7 @@ section.landing_page{
   }
 }
 
-@media screen and (max-width: $breakpoint-desktop-medium) {
+@media (max-width: $breakpoint-desktop-medium) {
   section.landing_page {
     flex-direction: column;
     height: 100%;
@@ -73,7 +73,7 @@ section.landing_page{
   }
 }
 
-@media screen and (max-width: $breakpoint-mobile) {
+@media (max-width: $breakpoint-mobile) {
   section.landing_page {
     .container_pic {
       img {

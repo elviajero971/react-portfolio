@@ -15,7 +15,7 @@
   }
 }
 
-@media screen and (max-width: $breakpoint-tablet) {
+@media (max-width: $breakpoint-tablet) {
   .app {
     section {
       margin: 8rem 3rem;
@@ -23,7 +23,7 @@
   }
 }
 
-@media screen and (max-width: $breakpoint-mobile) {
+@media (max-width: $breakpoint-mobile) {
   .app {
     section {
       margin: 3rem 1rem;
