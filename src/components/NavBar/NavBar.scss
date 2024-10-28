@@ -6,6 +6,7 @@
   transition: transform $duration ease-in-out;
   &:hover {
     transform: scale($scaleAmount) rotate($rotation);
+    cursor: pointer;
   }
 }
 
@@ -135,6 +136,16 @@ nav {
 
     .light-mode-icon {
       filter: invert(0%);
+    }
+  }
+}
+
+@media (max-width: $breakpoint-desktop-medium) {
+  #desktop-nav {
+    ul{
+      li {
+        font-size: 1.2rem;
+      }
     }
   }
 }

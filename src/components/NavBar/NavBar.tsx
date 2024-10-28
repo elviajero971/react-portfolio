@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link, useParams } from 'react-router-dom';
 import LanguageButton from '../Shared/LanguageButton'; // Import LanguageButton component
 import './NavBar.scss';
 
 const NavBar: React.FC = () => {
     const { i18n, t } = useTranslation();
+    const { lang } = useParams();
     const [darkMode, setDarkMode] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
     const [isSticky, setIsSticky] = useState(false);
@@ -16,10 +18,6 @@ const NavBar: React.FC = () => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
-
-    const changeLanguage = (lang: string) => {
-        i18n.changeLanguage(lang);
-    };
 
     const toggleDarkMode = () => {
         setDarkMode(!darkMode);
@@ -45,27 +43,24 @@ const NavBar: React.FC = () => {
             <nav id="desktop-nav" className={isSticky ? 'sticky' : ''}>
                 <div className="logo_container">
                     <button onClick={scrollToTop}>
-                        <img src={darkMode? "/logo_dark.png" : "/logo_light.png"} alt="Logo" className="logo" />
+                        <img src={darkMode ? "/logo_dark.png" : "/logo_light.png"} alt="Logo" className="logo" />
                     </button>
                     <p>Lucas Illiano</p>
                 </div>
-                <div>
-                    <ul className="nav-links">
-                        <li><a href="#about">{t('navbar.about')}</a></li>
-                        <li><a href="#skills">{t('navbar.skills')}</a></li>
-                        <li><a href="#experiences">{t('navbar.experiences')}</a></li>
-                        <li><a href="#projects">{t('navbar.projects')}</a></li>
-                        <li><a href="#educations">{t('navbar.educations')}</a></li>
-                        <li><a href="#contact">{t('navbar.contact')}</a></li>
-                    </ul>
-                </div>
+                <ul className="nav-links">
+                    <li><Link to={`/${lang}/about`}>{t('navbar.about')}</Link></li>
+                    <li><Link to={`/${lang}/skills`}>{t('navbar.skills')}</Link></li>
+                    <li><Link to={`/${lang}/experiences`}>{t('navbar.experiences')}</Link></li>
+                    <li><Link to={`/${lang}/projects`}>{t('navbar.projects')}</Link></li>
+                    <li><Link to={`/${lang}/educations`}>{t('navbar.educations')}</Link></li>
+                    <li><Link to={`/${lang}/contact`}>{t('navbar.contact')}</Link></li>
+                </ul>
                 <div className="nav-buttons">
-                    {languages.map((lang) => (
+                    {languages.map((language) => (
                         <LanguageButton
-                            key={lang}
-                            lang={lang}
+                            key={language}
+                            lang={language}
                             currentLang={i18n.language}
-                            changeLanguage={changeLanguage}
                         />
                     ))}
                     <button onClick={toggleDarkMode} className="dark-mode-toggle">
@@ -89,21 +84,20 @@ const NavBar: React.FC = () => {
                             <span></span>
                         </div>
                         <div className={`menu-links ${menuOpen ? 'open' : ''}`}>
-                            <li><a href="#about" onClick={toggleMenu}>{t('navbar.about')}</a></li>
-                            <li><a href="#skills" onClick={toggleMenu}>{t('navbar.skills')}</a></li>
-                            <li><a href="#experiences" onClick={toggleMenu}>{t('navbar.experiences')}</a></li>
-                            <li><a href="#projects" onClick={toggleMenu}>{t('navbar.projects')}</a></li>
-                            <li><a href="#educations" onClick={toggleMenu}>{t('navbar.educations')}</a></li>
-                            <li><a href="#contact" onClick={toggleMenu}>{t('navbar.contact')}</a></li>
+                            <li><Link to={`/${lang}/about`} onClick={toggleMenu}>{t('navbar.about')}</Link></li>
+                            <li><Link to={`/${lang}/skills`} onClick={toggleMenu}>{t('navbar.skills')}</Link></li>
+                            <li><Link to={`/${lang}/experiences`} onClick={toggleMenu}>{t('navbar.experiences')}</Link></li>
+                            <li><Link to={`/${lang}/projects`} onClick={toggleMenu}>{t('navbar.projects')}</Link></li>
+                            <li><Link to={`/${lang}/educations`} onClick={toggleMenu}>{t('navbar.educations')}</Link></li>
+                            <li><Link to={`/${lang}/contact`} onClick={toggleMenu}>{t('navbar.contact')}</Link></li>
                         </div>
                     </div>
                     <div className="nav-buttons">
-                        {languages.map((lang) => (
+                        {languages.map((language) => (
                             <LanguageButton
-                                key={lang}
-                                lang={lang}
+                                key={language}
+                                lang={language}
                                 currentLang={i18n.language}
-                                changeLanguage={changeLanguage}
                             />
                         ))}
                         <button onClick={toggleDarkMode} className="dark-mode-toggle">
