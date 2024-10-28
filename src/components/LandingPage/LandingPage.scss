@@ -8,8 +8,9 @@ section.landing_page{
   justify-content: space-around;
 
   .container_pic{
+    margin-right: 6rem;
     img {
-      width: 36rem;
+      width: 32rem;
       height: auto;
       border-radius: 50%;
     }
@@ -44,23 +45,13 @@ section.landing_page{
   }
 }
 
-@media (max-width: $breakpoint-desktop-large) {
-  section.landing_page {
-    .container_pic {
-      img {
-        width: 24rem;
-      }
-    }
-  }
-}
-
 @media (max-width: $breakpoint-desktop-medium) {
   section.landing_page {
     flex-direction: column;
     height: 100%;
     .container_pic {
       img {
-        width: 36rem;
+        width: 24rem;
         margin-top: 2rem;
       }
     }
@@ -76,6 +67,7 @@ section.landing_page{
 @media (max-width: $breakpoint-mobile) {
   section.landing_page {
     .container_pic {
+      margin-right: 0;
       img {
         width: 100%;
         height: auto;

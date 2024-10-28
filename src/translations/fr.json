@@ -17,6 +17,17 @@
     "github": "https://github.com/elviajero971/",
     "linkedin": "https://www.linkedin.com/in/lucas-illiano/"
   },
+  "resume": {
+    "request": "Demande de CV",
+    "explanation": "Pour des raisons de sécurité et de confidentialité, je préfère envoyer mon CV par e-mail.",
+    "enter_email": "Entrez votre e-mail",
+    "send": "Envoyer le CV",
+    "sending": "Envoi...",
+    "sent_successfully": "CV envoyé avec succès !",
+    "error_message": "Une erreur est survenue. Veuillez réessayer ou me contacter directement sur LinkedIn.",
+    "email_subject": "CV de Lucas Illiano",
+    "email_body": "Bonjour,<br><br>Merci pour votre intérêt. Voici le lien pour télécharger le CV que vous avez demandé : <a href='{{link}}' target='_blank'>Télécharger le CV</a>.<br><br>Si vous avez d'autres questions ou besoin d'informations supplémentaires, n'hésitez pas à me contacter.<br><br>Cordialement,<br>Lucas Illiano"
+  },
   "about": {
     "text_1": "En savoir plus",
     "text_2": "À propos de moi",

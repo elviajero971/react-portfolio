@@ -17,6 +17,17 @@
     "github": "https://github.com/elviajero971/",
     "linkedin": "https://www.linkedin.com/in/lucas-illiano/"
   },
+  "resume": {
+    "request": "Request Resume",
+    "explanation": "For security and privacy reasons, I prefer to send my resume by email.",
+    "enter_email": "Enter your email",
+    "send": "Send Resume",
+    "sending": "Sending...",
+    "sent_successfully": "Resume sent successfully!",
+    "error_message": "An error occurred. Please try again or contact me directly on LinkedIn.",
+    "email_subject": "Lucas Illiano's Resume",
+    "email_body": "Hello,<br><br>Thank you for your interest. Here is the link to download the resume you requested: <a href='{{link}}' target='_blank'>Download Resume</a>.<br><br>If you have any further questions or need additional information, please don't hesitate to reach out.<br><br>Best regards,<br>Lucas Illiano"
+  },
   "about": {
     "text_1": "Get to know more",
     "text_2": "About me",
