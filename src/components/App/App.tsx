@@ -15,6 +15,9 @@ const App: React.FC = () => {
                 <Route path="/:lang/educations" element={<SectionScrollWrapper sectionId="educations" />} />
                 <Route path="/:lang/contact" element={<SectionScrollWrapper sectionId="contact" />} />
 
+                {/* Redirect root language paths to the top of the page */}
+                <Route path="/:lang" element={<SectionScrollWrapper sectionId="landingPage" />} />
+
                 {/* Redirect to default language and section if no language is specified */}
                 <Route path="*" element={<Navigate to="/en/landingPage" replace />} />
             </Routes>
