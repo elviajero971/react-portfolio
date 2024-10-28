@@ -1,7 +1,7 @@
 // Experiences.tsx
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import Experience from './Experience/Experience'; // Adjust the path as necessary
+import DetailCard from "../Shared/DetailCard";
 import './Experiences.scss';
 
 // TypeScript interfaces
@@ -32,11 +32,11 @@ const Experiences: React.FC = () => {
             <h1 className="title">{t('experiences.text_2')}</h1>
             <div className="experiences_container">
                 {experiencesArray.map((experience, index) => (
-                    <Experience
+                    <DetailCard
                         key={index}
                         title={experience.title}
                         date={experience.date}
-                        company={experience.company}
+                        entity={experience.company}
                         location={experience.location}
                         description={experience.description}
                     />

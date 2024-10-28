@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import './Educations.scss';
-import Education from "./Education/Education";
+import DetailCard from "../Shared/DetailCard";
 
 interface Description {
     [key: string]: string;
@@ -30,11 +30,11 @@ const Educations: React.FC = () => {
             <h1 className="title">{t('educations.text_2')}</h1>
             <div className="educations_container">
                 {educationsArray.map((education, index) => (
-                    <Education
+                    <DetailCard
                         key={index}
                         title={education.title}
                         date={education.date}
-                        school={education.school}
+                        entity={education.school}
                         location={education.location}
                         description={education.description}
                     />
