@@ -22,12 +22,24 @@ const SectionScrollWrapper: React.FC<{ sectionId: string }> = ({ sectionId }) =>
         }
     }, [lang, i18n]);
 
-    // Scroll to the specified section when the component renders
+    // Scroll to the specified section with an offset for the sticky navbar
     useEffect(() => {
-        const section = document.getElementById(sectionId);
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
-        }
+        const scrollToSection = () => {
+            const section = document.getElementById(sectionId);
+            const navbarHeight = 80; // Adjust this value to match your navbar's height
+
+            if (section) {
+                const sectionTop = section.getBoundingClientRect().top + window.scrollY - navbarHeight;
+                console.log('Scrolling to:', sectionId, 'at position:', sectionTop);
+                window.scrollTo({ top: sectionTop, behavior: 'smooth' });
+            } else {
+                console.warn('Section not found:', sectionId);
+            }
+        };
+
+        // Use a timeout to allow the layout to settle before scrolling
+        const timer = setTimeout(scrollToSection, 100); // Adjust delay if needed
+        return () => clearTimeout(timer); // Clean up timeout on unmount
     }, [sectionId]);
 
     return (

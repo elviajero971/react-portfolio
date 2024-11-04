@@ -11,7 +11,6 @@
     "text_1": "Hello, I'm",
     "text_2": "Lucas Illiano",
     "text_3": "Backend Developer",
-    "cv_path": "/cv.pdf",
     "text_btn_cv": "Download CV",
     "text_btn_contact": "Contact me",
     "github": "https://github.com/elviajero971/",
@@ -145,7 +144,7 @@
       "project_1": {
         "title": "Portfolio",
         "date": "2024",
-        "image_path": "/project-portfolio-fr.png",
+        "image_path": "/project-portfolio-en.png",
         "github_url": "https://github.com/elviajero971/react-portfolio",
         "live_url": "https://nomadev.online/"
       },

@@ -35,7 +35,7 @@ const NavBar: React.FC = () => {
         });
     };
 
-    const languages = ['en', 'fr']; // Dynamically handle multiple languages
+    const languages = ['en', 'fr', 'es']; // Dynamically handle multiple languages
 
     return (
         <>

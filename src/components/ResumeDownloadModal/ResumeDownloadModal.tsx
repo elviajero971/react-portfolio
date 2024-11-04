@@ -14,10 +14,19 @@ const ResumeDownloadModal: React.FC<ResumeDownloadModalProps> = ({ isOpen, onClo
     const [message, setMessage] = useState<string | null>(null);
     const [isSubmitting, setIsSubmitting] = useState(false);
 
-    // Get the appropriate resume link based on the current language
-    const resumeLink = i18n.language === 'fr'
-        ? process.env.REACT_APP_RESUME_LINK_FR
-        : process.env.REACT_APP_RESUME_LINK_EN;
+    // Get the appropriate resume link based on the current language for en, fr and es using case statement
+
+    let resumeLink = '';
+    switch (i18n.language) {
+        case 'fr':
+            resumeLink = process.env.REACT_APP_RESUME_FR!;
+            break;
+        case 'es':
+            resumeLink = process.env.REACT_APP_RESUME_ES!;
+            break;
+        default:
+            resumeLink = process.env.REACT_APP_RESUME_EN!;
+    }
 
     // Compose the full email content by replacing the {{link}} placeholder
     const emailSubject = t('resume.email_subject')

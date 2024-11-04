@@ -1,0 +1,241 @@
+{
+  "navbar": {
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "experiences": "Experiencias",
+    "projects": "Proyectos",
+    "educations": "Formación",
+    "contact": "Contacto"
+  },
+  "profile": {
+    "text_1": "Hola, soy",
+    "text_2": "Lucas Illiano",
+    "text_3": "Desarrollador Backend",
+    "text_btn_cv": "Descargar CV",
+    "text_btn_contact": "Contáctame",
+    "github": "https://github.com/elviajero971/",
+    "linkedin": "https://www.linkedin.com/in/lucas-illiano/"
+  },
+  "resume": {
+    "request": "Solicitud de CV",
+    "explanation": "Por razones de seguridad y confidencialidad, prefiero enviar mi CV por correo electrónico.",
+    "enter_email": "Introduce tu correo electrónico",
+    "send": "Enviar CV",
+    "sending": "Enviando...",
+    "sent_successfully": "¡CV enviado con éxito!",
+    "error_message": "Ocurrió un error. Por favor, inténtelo de nuevo o contácteme directamente en LinkedIn.",
+    "email_subject": "CV de Lucas Illiano",
+    "email_body": "Hola,<br><br>Gracias por tu interés. Aquí tienes el enlace para descargar el CV que has solicitado: <a href='{{link}}' target='_blank'>Descargar el CV</a>.<br><br>Si tienes más preguntas o necesitas más información, no dudes en contactarme.<br><br>Saludos,<br>Lucas Illiano"
+  },
+  "about": {
+    "text_1": "Saber más",
+    "text_2": "Sobre mí",
+    "text_3": "Soy un desarrollador backend apasionado por la tecnología y los desafíos. Tengo más de 2 años de experiencia en el desarrollo de software y sitios web. He trabajado con tecnologías como Node.js, Express.js, MongoDB, MySQL, React.js, HTML, CSS, JavaScript, Git, entre otros.",
+    "experience": {
+      "title": "Experiencia",
+      "text_1": "Más de 3 años",
+      "text_2": "Desarrollador backend"
+    },
+    "education": {
+      "title": "Formación",
+      "text_1": "Diploma de Técnico en Desarrollo Web",
+      "text_2": "Máster en Sociología"
+    }
+  },
+  "skills": {
+    "text_1": "Explora mis",
+    "text_2": "Habilidades",
+    "backend": {
+      "title": "Backend",
+      "skills": {
+        "ruby_on_rails": { "name": "Ruby On Rails", "level": "Experto" },
+        "ruby": { "name": "Ruby", "level": "Experto" },
+        "javascript": { "name": "JavaScript", "level": "Experto" }
+      }
+    },
+    "frontend": {
+      "title": "Frontend",
+      "skills": {
+        "react": { "name": "React.js", "level": "Experto" },
+        "turbo": { "name": "Turbo", "level": "Experto" },
+        "stimulus": { "name": "Stimulus", "level": "Experto" },
+        "tailwind": { "name": "Tailwind CSS", "level": "Experto" }
+      }
+    },
+    "database": {
+      "title": "Base de datos",
+      "skills": {
+        "postgresql": { "name": "PostgreSQL", "level": "Experto" },
+        "mysql": { "name": "MySQL", "level": "Experto" },
+        "redis": { "name": "Redis", "level": "Básico" }
+      }
+    },
+    "testing": {
+      "title": "Pruebas",
+      "skills": {
+        "rspec": { "name": "RSpec", "level": "Experto" },
+        "tdd": { "name": "TDD", "level": "Experto" },
+        "selenium": { "name": "Selenium", "level": "Básico" }
+      }
+    },
+    "devops": {
+      "title": "DevOps",
+      "skills": {
+        "aws": { "name": "AWS", "level": "Básico" },
+        "docker": { "name": "Docker", "level": "Básico" },
+        "jenkins": { "name": "Jenkins", "level": "Básico" },
+        "github": { "name": "GitHub", "level": "Experto" },
+        "raspberry": { "name": "Raspberry Pi", "level": "Básico" }
+      }
+    }
+  },
+  "experiences": {
+    "text_1": "Descubre mi",
+    "text_2": "Experiencia",
+    "experiences_list": {
+      "experience_1": {
+        "title": "Desarrollador Full Stack Ruby On Rails",
+        "date": "2021 - 2024",
+        "company": "Holivia",
+        "location": "Montpellier, Francia",
+        "description": {
+          "text_1": "Creación de funcionalidades: Desarrollo de nuevas funciones para aplicaciones web usando Ruby on Rails, Turbo, React, Rspec, PostgreSQL y ElasticSearch.",
+          "text_2": "Resolución de errores: Solución de errores complejos para mejorar la estabilidad y rendimiento de las aplicaciones.",
+          "text_3": "Despliegue y CI/CD: Implementación de pipelines de integración y despliegue continuos con GitHub Actions y despliegue en AWS (EC2, Amazon RDS, Elasticache, CodePipeline).",
+          "text_4": "Colaboración: Colaboración cercana con equipos de desarrollo para adoptar mejores prácticas de DevOps.",
+          "text_5": "Autonomía: Gestión independiente de tareas, desde el desarrollo hasta la producción."
+        }
+      },
+      "experience_2": {
+        "title": "Desarrollo y Despliegue de Sitios Web",
+        "date": "2021 - presente",
+        "company": "Proyectos personales",
+        "location": "En línea",
+        "description": {
+          "text_1": "Servidor Personal: Instalación y configuración de un servidor en Raspberry Pi con Apache2 y Webmin.",
+          "text_2": "Desarrollo Web: Creación de sitios web dinámicos en Ruby on Rails y Node.js.",
+          "text_3": "Automatización: Implementación de CI/CD con GitHub Actions y Jenkins.",
+          "text_4": "Administración del Servidor: Mantenimiento y administración remota del servidor vía SSH.",
+          "text_5": "Experimentación: Exploración de nuevas tecnologías y prácticas para mejorar mis habilidades técnicas."
+        }
+      },
+      "experience_3": {
+        "title":"Creación de Sitios Web Dinámicos",
+        "date": "2020 - 3 meses",
+        "company": "The Hacking Project",
+        "location": "En línea",
+        "description": {
+          "text_1": "Trabajo en Equipo: Participación en proyectos en equipo de 5 personas.",
+          "text_2": "Cat Store: Desarrollo de una tienda de comercio electrónico en una semana.",
+          "text_3": "WhiteBoard: Creación de una plataforma web en dos semanas.",
+          "text_4": "Tecnologías utilizadas: Ruby, Ruby on Rails, HTML, CSS, Bootstrap, JavaScript, jQuery.",
+          "text_5": "Gestión de Proyectos: Uso de Trello para organizar y dar seguimiento a las tareas.",
+          "text_6": "Habilidades Desarrolladas: Aplicación de metodologías ágiles y fortalecimiento de habilidades en desarrollo full-stack."
+        }
+      }
+    }
+  },
+  "projects": {
+    "text_1": "Descubre mis",
+    "text_2": "Proyectos",
+    "view_code": "Ver código",
+    "view_live": "Ver en vivo",
+    "projects_list": {
+      "project_1": {
+        "title": "Portfolio",
+        "date": "2024",
+        "image_path": "/project-portfolio-es.png",
+        "github_url": "https://github.com/elviajero971/react-portfolio",
+        "live_url": "https://nomadev.online/"
+      },
+      "project_2": {
+        "title": "Cat Store",
+        "date": "2020",
+        "image_path": "/project-catstore.png",
+        "github_url": "https://github.com/elviajero971/cat_store",
+        "live_url": null
+      },
+      "project_3": {
+        "title": "Whiteboard",
+        "date": "2020",
+        "image_path": "/project-whiteboard.png",
+        "github_url": "https://github.com/elviajero971/THP_Final_Project_Schoolink",
+        "live_url": null
+      },
+      "project_4": {
+        "title": "Amiibos",
+        "date": "2021",
+        "image_path": "/project-amiibos.png",
+        "github_url": "https://github.com/elviajero971/react-amiibo-app",
+        "live_url": "https://amiibos.nomadev.online/"
+      },
+      "project_5": {
+        "title": "Lista de Tareas",
+        "date": "2024",
+        "image_path": "/project-todo-list.png",
+        "github_url": "https://github.com/elviajero971/todo_app",
+        "live_url": "https://todo-app-frontend-tawny.vercel.app/"
+      },
+      "project_6": {
+        "title": "App de Clima",
+        "date": "2024",
+        "image_path": "/project-weather.png",
+        "github_url": "https://github.com/elviajero971/react-weather-app",
+        "live_url": "https://weatherapp.nomadev.online/"
+      }
+    }
+  },
+  "educations": {
+    "text_1": "Descubre mi",
+    "text_2": "Formación",
+    "educations_list": {
+      "education_1": {
+        "title": "Técnico en Desarrollo Web y Web Móvil",
+        "date": "Septiembre 2020 - Mayo 2021",
+        "school": "ADRAR",
+        "location": "Montpellier, Francia",
+        "description": {
+          "text_1": "Lenguajes y Tecnologías estudiadas: PHP, Symfony, Node.js, HTML, CSS, Javascript, React, MySQL, MongoDB",
+          "text_2": "Dominio de los fundamentos del desarrollo web.",
+          "text_3": "Capacidad para desarrollar aplicaciones web completas y eficientes.",
+          "text_4": "Comprensión de arquitecturas web y buenas prácticas de codificación."
+        }
+      },
+      "education_2": {
+        "title": "Bootcamp en Desarrollo Web",
+        "date": "Abril 2020 - Junio 2020",
+        "school": "The Hacking Project",
+        "location": "En línea",
+        "description": {
+          "text_1": "Bootcamp intensivo enfocado en el aprendizaje colaborativo del desarrollo web.",
+          "text_2": "Lenguajes y Tecnologías estudiadas: Ruby, Ruby on Rails, HTML, CSS, JavaScript, jQuery, PostgreSQL",
+          "text_3": "Metodologías: POO, TDD",
+          "text_4": "Proyectos: Participación en proyectos colaborativos y aplicación de habilidades en proyectos reales."
+        }
+      },
+      "education_3": {
+        "title": "Cursos en línea",
+        "date": "2020 - presente",
+        "school": "OpenClassrooms",
+        "location": "En línea",
+        "description": {
+          "text_1": "HTML/CSS: Fundamentos del desarrollo web y diseño responsivo.",
+          "text_2": "Ruby: Dominio del lenguaje Ruby para desarrollo backend.",
+          "text_3": "Ruby on Rails: Habilidad para crear aplicaciones web con el framework Rails.",
+          "text_4": "JavaScript: Habilidades en scripts para interfaces de usuario interactivas.",
+          "text_5": "DevOps: Conocimiento de prácticas de integración y despliegue continuo."
+        }
+      }
+    }
+  },
+  "contact": {
+    "text_1": "Ponerse en contacto",
+    "text_2": "Contáctame",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "message": "Mensaje",
+      "send": "Enviar"
+    }
+  }
+}
